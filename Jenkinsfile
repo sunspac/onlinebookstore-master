@@ -7,5 +7,10 @@ pipeline {
               	    echo "repo cloned successfully"  
               	    }  
          	    } 
+       	    stage("build") {  
+           	    steps {  
+                     mvn clean install
+              	    }  
+         	    }             
         }
 }
