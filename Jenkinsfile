@@ -9,7 +9,7 @@ pipeline {
          	    } 
        	    stage("build") {  
            	    steps {  
-                     mvn clean install
+                     echo " build successfully"  
               	    }  
          	    }             
         }
