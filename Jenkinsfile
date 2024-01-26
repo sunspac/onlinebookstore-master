@@ -10,7 +10,8 @@ pipeline {
             stage("build docker Image") {  
            	    steps {  
                       echo " build successfully"  
-                      sh "docker build -t bookstore:latest ."
+                      sh "ls -l"
+                      sh "pwd"
               	    }  
          	    } 
         }
