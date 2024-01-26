@@ -15,9 +15,12 @@ pipeline {
               	    }  
          	    } 
             stage("publish to registry") {
-                withDockerRegistry(credentialsId: 'dockerhub', url: 'https://hub.docker.com/repositories/decawsdevops') {
-                   sh "docker push decawsdevops/sunspace:3"
+                steps {
+                    withDockerRegistry(credentialsId: 'dockerhub', url: 'https://hub.docker.com/repositories/decawsdevops') {
+                           sh "docker push decawsdevops/sunspace:3"
+                    }
                 }
+
             }
         }
 }
