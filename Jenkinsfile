@@ -9,9 +9,8 @@ pipeline {
          	    } 
             stage("build docker Image") {  
            	    steps {  
+                      sh "docker build -t sunspace:1 ."
                       echo " build successfully"  
-                      sh "ls -l"
-                      sh "pwd"
               	    }  
          	    } 
         }
