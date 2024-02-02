@@ -5,7 +5,7 @@
 	<groupId>onlinebookstore</groupId>
 	<artifactId>ashokonlinebookstore</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>warr</packaging>
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
 		<finalName>onlinebookstore</finalName>
